@@ -1,9 +1,9 @@
-import { extendTheme } from '@chakra-ui/react'
+import { extendTheme } from '@chakra-ui/react';
 
 const config = {
   initialColorMode: 'dark',
   useSystemColorMode: false,
-}
+};
 
 // const fonts = {
 //   heading: `'DM Sans', sans-serif`,
@@ -13,11 +13,7 @@ const config = {
 const theme = extendTheme({
   config,
   // fonts,
-  colors: {
-    primary: {
-      500: 'yellow'
-    }
-  },
+  // colors: {},
   styles: {
     global: {
       // body: {},
@@ -34,6 +30,6 @@ const theme = extendTheme({
       },
     },
   },
-})
+});
 
-export default theme
+export default theme;

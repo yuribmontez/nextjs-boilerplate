@@ -1,7 +1,12 @@
+import { Chakra } from 'components/Core';
 import { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <Chakra>
+      <Component {...pageProps} />
+    </Chakra>
+  );
 }
 
 export default MyApp;

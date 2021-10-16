@@ -15,11 +15,12 @@ module.exports = {
       version: 'detect',
     },
   },
+  plugins: ['@typescript-eslint', 'prettier'],
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
-    'prettier',
     'plugin:@next/next/recommended',
+    'prettier',
   ],
   rules: {
     '@typescript-eslint/no-namespace': 'off',
@@ -30,5 +31,6 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     'react/display-name': 'off',
+    'prettier/prettier': 2,
   },
 };
